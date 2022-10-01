@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<html>
+
+<body
+style="background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,1) 9%, rgba(0,0,0,1) 29%, rgba(255,255,255,1) 100%);">
+  <form class="barber_form" method="POST" name="zayavka" action="/zayavka.php">
+
+    <center>
+      <img src="C:\Запись в барбер\Картинки\Снимок.png" alt="Лого">
+    </center>
+    <main
+    style ="border: 15px solid black;">
+      <p class="caption" 
+      style="padding-left: 800px;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 32px;">Записаться онлайн</p>
+
+      <div class="infofield"
+      style="height: 100%;
+      padding-left: 600px;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 22px;
+      margin-bottom: 17px; 
+      margin-top: 50px;
+      color: #ffffff;">Тип стрижки:
+        <select name="service_type"
+        style="margin-left: 100px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 19px;">
+          <option>Стрижка</option>
+          <option>Стрижка бороды</option>
+          <option selected="selected">Стрижка + Борода</option>
+        </select>
+      </div>
+
+      <div class="infofield"
+      style="height: 100%;
+      padding-left: 600px;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 22px;
+      margin-bottom: 17px; 
+      margin-top: 50px;
+      color: #ffffff;">Уровень специалиста:
+        <label><input type="radio" name="master" value="1" />Стажер</label>
+        <label><input type="radio" name="master" value="2" checked="checked" />Барбер</label>
+        <label><input type="radio" name="master" value="3" />VIP Барбер</label>
+      </div>
+
+      <div class="infofield"
+      style="height: 100%;
+      padding-left: 600px;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 22px;
+      margin-bottom: 17px; 
+      margin-top: 50px;
+      color: #ffffff;">Дополнительные услуги:
+        <label style="margin-left: 30px"><input type="checkbox" name="massage" /> Массаж головы</label>
+        <label style="margin-left: 30px"><input type="checkbox" name="razor" /> Опасная бритва</label>
+      </div>
+
+      <div class="infofield"
+      style="height: 100%;
+      padding-left: 600px;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 22px;
+      margin-bottom: 17px; 
+      margin-top: 50px;
+      color: #ffffff;">Дата и время записи:
+        <input type="datetime-local" name="date_time" />
+      </div>
+
+      <div class="infofield"
+      style="height: 100%;
+      padding-left: 600px;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 22px;
+      margin-bottom: 17px; 
+      margin-top: 50px;
+      color: #ffffff;">Ваше имя:
+        <input type="text" name="name" placeholder="введите ваше имя" />
+      </div>
+
+      <div class="infofield"
+      style="height: 100%;
+      padding-left: 600px;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 22px;
+      margin-bottom: 17px; 
+      margin-top: 50px;
+      color: #ffffff;">Ваш телефон:
+        <input type="tel" name="phone" placeholder="например, +7 800 123-45-67" />
+
+        <input type="submit" name="zayavka_submit" value="Записаться"
+        style="margin-left: 40px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 19px;" />
+      </div>
+    </main>
+  </form>
+  <footer style="background-color: #000000;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  text-align: center; 
+  width: 100%;   
+  font-size: 19px;
+  font-weight: bold;
+  color: #ffffff;"> &#169; Все права защищены </footer>
+
+</body>
+
+</html>
