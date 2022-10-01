@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="C:\Запись в барбер\CSS\style.css">
+</head>
+<html>
+
+<body>
+  <form class="barber_form" method="POST" name="zayavka" action="/zayavka.php">
+
+    <center>
+      <img src="C:\Запись в барбер\Картинки\Снимок.png" alt="Лого">
+    </center>
+    <main>
+      <p class="caption">Записаться онлайн</p>
+
+      <div class="infofield">Тип стрижки:
+        <select name="service_type">
+          <option>Стрижка</option>
+          <option>Стрижка бороды</option>
+          <option selected="selected">Стрижка + Борода</option>
+        </select>
+      </div>
+
+      <div class="infofield">Уровень специалиста:
+        <label><input type="radio" name="master" value="1" />Стажер</label>
+        <label><input type="radio" name="master" value="2" checked="checked" />Барбер</label>
+        <label><input type="radio" name="master" value="3" />VIP Барбер</label>
+      </div>
+
+      <div class="infofield">Дополнительные услуги:
+        <label><input type="checkbox" name="massage" /> Массаж головы</label>
+        <label><input type="checkbox" name="razor" /> Опасная бритва</label>
+      </div>
+
+      <div class="infofield">Дата и время записи:
+        <input type="datetime-local" name="date_time" />
+      </div>
+
+      <div class="infofield">Ваше имя:
+        <input type="text" name="name" placeholder="введите ваше имя" />
+      </div>
+
+      <div class="infofield">Ваш телефон:
+        <input type="tel" name="phone" placeholder="например, +7 800 123-45-67" />
+
+        <input type="submit" name="zayavka_submit" value="Записаться" />
+      </div>
+    </main>
+  </form>
+  <footer> &#169; Все права защищены </footer>
+
+</body>
+
+</html>
